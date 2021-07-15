@@ -88,6 +88,7 @@ a > .humburger {
 .navigation img {
   width: 150px;
   height: auto;
+  margin-left: 10px;
 }
 
 .navigation ul {
@@ -127,7 +128,7 @@ a > .humburger {
 
 @media (max-width: 1030px) {
   .navigation ul :last-child {
-    margin: 20px auto;
+    margin: 10px auto;
   }
 }
 
@@ -141,20 +142,18 @@ a > .humburger {
     height: 600px;
     background-color: #151416;
     width: 100%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  }
+}
+
+@media (max-width: 1030px) {
+  .navigation {
+    height: 70px;
   }
 }
 
 @media only screen and (max-width: 1030px) {
   .toggle {
     display: block;
-  }
-  .logo {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
 }
 
@@ -373,9 +372,6 @@ i {
 
 @media screen and (max-width: 1000px) {
   .links {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     margin: 10px;
   }
   .banner-image img {

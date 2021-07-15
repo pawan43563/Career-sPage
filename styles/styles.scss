@@ -64,6 +64,7 @@ a > .humburger{
     img{
         width:150px;
         height: auto;
+        margin-left:10px;
     }
     ul{
         @include flex(row,flex-end,center);
@@ -79,7 +80,7 @@ a > .humburger{
         }:last-child{
             margin-right: 10px;
             @media (max-width:1030px){
-                margin:20px auto;
+                margin:10px auto;
             }        
         }
         @media (max-width:1030px){
@@ -88,10 +89,11 @@ a > .humburger{
             height: 600px;
             background-color: $primaryBackground;
             width: 100%;
-            order:1;
         }
 
-    }    
+    }@media (max-width:1030px){
+        height: 70px;
+    }
 }
 @media only screen and (max-width:1030px){
 
@@ -99,10 +101,7 @@ a > .humburger{
   
         display: block;
     }
-    .logo{
-  
-        order:3;
-    }
+
   }
 
 
@@ -291,7 +290,7 @@ i{
 
 @media screen and (max-width:1000px) {
     .links{
-        order:2;
+
         margin:10px;
     }
     .banner-image img{
