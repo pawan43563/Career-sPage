@@ -10,6 +10,51 @@ body{
    
 
 }
+
+
+.vl1,.vl2,.vl3,.vl4,.vl5,.vl6,.vl7{
+    box-shadow: 0px 0px 0px 0.1px #F6F8F8;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 999999;
+}
+.vl11,.vl22,.vl33,.vl44,.vl55,.vl66,.vl77{
+    box-shadow: 0px 0px 0px 0.1px #F6F8F8;
+  height: 1000px;
+  position: absolute;
+  top:200%;
+
+  z-index: 999999;
+}
+
+
+
+
+.vl1,.vl11{
+  left: 15%;
+}
+.vl2,.vl22{
+    left:30%;
+}
+.vl3,.vl33{
+    left:45%;
+}
+
+.vl4,.vl44{
+    left:60%;
+}
+
+.vl5,.vl55{
+    left:75%;
+}
+
+.vl6,.vl66{
+    left:90%;
+}
+
+
+
 .Para{
     text-align: center;
     font-size: 18px;
@@ -25,6 +70,22 @@ body{
     position: sticky;
     top:0px;
     z-index: 99999;
+    box-shadow: 0 8px 6px -10px white;
+    @media screen and (max-width:700px) {
+        .vl1,.vl6,.vl3,.vl4{
+            display: none;
+        }
+    }
+    @media screen and (max-width:1183px) {
+        .vl1,.vl6,.vl4{
+            display: none;
+        }
+    }
+    @media screen and (max-width:1283px) {
+        .vl6,.vl4{
+            display: none;
+        }
+    }
 }
 
 a{
@@ -90,9 +151,10 @@ a > .humburger{
             background-color: $primaryBackground;
             width: 100%;
         }
-
+    
     }@media (max-width:1030px){
         height: 70px;
+
     }
 }
 @media only screen and (max-width:1030px){
@@ -100,6 +162,10 @@ a > .humburger{
     .toggle{
   
         display: block;
+    }
+    .vl1,.vl2,.vl3,.vl4,.vl5,.vl6,.vl7{
+        height: 70px;
+
     }
 
   }
@@ -109,17 +175,17 @@ a > .humburger{
 
 
 
-.drop{
+// .drop{
 
-    width:100px;
-    height: auto;
-    z-index: 99999;
-    margin:10px auto;
-    background-color: $primaryBackground;
-    color:white;
+//     width:100px;
+//     height: auto;
+//     z-index: 99999;
+//     margin:10px auto;
+//     background-color: $primaryBackground;
+//     color:white;
     
-    display: none;
-}
+//     display: none;
+// }
 
 
 
@@ -231,12 +297,29 @@ hr{
     background-color: grey;
 
 }
+.foot{
+    background-color: $primaryBackground;
+    @media screen and (max-width:1145px) {
+        .vl22,.vl55{
+            display: none;
+        }        
+    }
+
+    @media screen and (max-width:1016px) {
+        .vl33,.vl44{
+            display: none;
+        }        
+ 
+    }
+
+
+}
 
 .footer{
     padding:50px;
     width:70%;
     margin: auto;
-    background-color: black;
+    background-color: $primaryBackground;
     color:$textColor;
     h1{
         text-align: center;
@@ -306,7 +389,7 @@ i{
         padding:20px;
         text-align: center;
         margin-top:0px;
-        background-color: black;
+        background-color: $primaryBackground;
         color: white;
     }
     .flex{

@@ -7,6 +7,48 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.vl1, .vl2, .vl3, .vl4, .vl5, .vl6, .vl7 {
+  -webkit-box-shadow: 0px 0px 0px 0.1px #F6F8F8;
+          box-shadow: 0px 0px 0px 0.1px #F6F8F8;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 999999;
+}
+
+.vl11, .vl22, .vl33, .vl44, .vl55, .vl66, .vl77 {
+  -webkit-box-shadow: 0px 0px 0px 0.1px #F6F8F8;
+          box-shadow: 0px 0px 0px 0.1px #F6F8F8;
+  height: 1000px;
+  position: absolute;
+  top: 200%;
+  z-index: 999999;
+}
+
+.vl1, .vl11 {
+  left: 15%;
+}
+
+.vl2, .vl22 {
+  left: 30%;
+}
+
+.vl3, .vl33 {
+  left: 45%;
+}
+
+.vl4, .vl44 {
+  left: 60%;
+}
+
+.vl5, .vl55 {
+  left: 75%;
+}
+
+.vl6, .vl66 {
+  left: 90%;
+}
+
 .Para {
   text-align: center;
   font-size: 18px;
@@ -24,6 +66,26 @@ body {
   position: sticky;
   top: 0px;
   z-index: 99999;
+  -webkit-box-shadow: 0 8px 6px -10px white;
+          box-shadow: 0 8px 6px -10px white;
+}
+
+@media screen and (max-width: 700px) {
+  .header .vl1, .header .vl6, .header .vl3, .header .vl4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1183px) {
+  .header .vl1, .header .vl6, .header .vl4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1283px) {
+  .header .vl6, .header .vl4 {
+    display: none;
+  }
 }
 
 a {
@@ -155,16 +217,9 @@ a > .humburger {
   .toggle {
     display: block;
   }
-}
-
-.drop {
-  width: 100px;
-  height: auto;
-  z-index: 99999;
-  margin: 10px auto;
-  background-color: #151416;
-  color: white;
-  display: none;
+  .vl1, .vl2, .vl3, .vl4, .vl5, .vl6, .vl7 {
+    height: 70px;
+  }
 }
 
 .banner {
@@ -272,8 +327,8 @@ a > .humburger {
 
 .button {
   background-color: rgba(15, 103, 218, 0.952);
-  border-radius: 15px;
-  padding: 10px 20px;
+  border-radius: 25px;
+  padding: 15px 20px;
   font-size: 1rem;
 }
 
@@ -303,11 +358,27 @@ hr {
   background-color: grey;
 }
 
+.foot {
+  background-color: #151416;
+}
+
+@media screen and (max-width: 1145px) {
+  .foot .vl22, .foot .vl55 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1016px) {
+  .foot .vl33, .foot .vl44 {
+    display: none;
+  }
+}
+
 .footer {
   padding: 50px;
   width: 70%;
   margin: auto;
-  background-color: black;
+  background-color: #151416;
   color: white;
 }
 
@@ -387,7 +458,7 @@ i {
     padding: 20px;
     text-align: center;
     margin-top: 0px;
-    background-color: black;
+    background-color: #151416;
     color: white;
   }
   .flex {
