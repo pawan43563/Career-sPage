@@ -1,0 +1,28 @@
+
+@mixin button{
+    background-color: $buttonColor;
+    border-radius: 15px;
+    padding:10px 20px;
+    font-size: 1rem;
+    &:hover{
+        background-color: #0054AE;
+        color:$textColor;
+    }
+}
+
+@mixin flexbox-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex($direction:row,$justify:flex-start,$align:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
