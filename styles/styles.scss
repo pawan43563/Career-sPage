@@ -11,6 +11,9 @@ body{
 
 }
 
+.toggle{
+    display: none;
+}
 
 .vl1,.vl2,.vl3,.vl4,.vl5,.vl6,.vl7{
     box-shadow: 0px 0px 0px 0.1px #F6F8F8;
@@ -103,9 +106,7 @@ li{
 .flex{
     @include flex($direction:row,$justify:space-between,$align:center);
 }
-.toggle{
-    display: none;
-  }
+
   
 a > .humburger{
     font-size: 30px;
@@ -128,6 +129,7 @@ a > .humburger{
         margin-left:10px;
     }
     ul{
+        padding-bottom: 15px;        
         @include flex(row,flex-end,center);
         li{ 
             margin-left:40px;
@@ -156,7 +158,44 @@ a > .humburger{
         height: 70px;
 
     }
+    .menu{
+        padding-top:40px;
+        margin-right: 40px;
+        width: 50px;
+        height: 50px;  
+        .bar{
+            
+            width: 70px;
+            height: 3px;
+            background-color: white;
+            transition: all 0.5s ease;
+            
+        }
+        // .first{
+        //     transform:translateY(19px);
+        // }
+        .second{
+            transform:translateY(10px);
+        }   
+
+    }
+
+    .cross {
+        .first{
+            transform:rotate(45deg);
+        }.third{
+            transform: rotate(-45deg);
+        }.second{
+            opacity: 0;
+        }
+    }
 }
+
+
+
+
+
+
 @media only screen and (max-width:1030px){
 
     .toggle{
@@ -171,7 +210,7 @@ a > .humburger{
   }
 
 
-  
+
 
 
 
@@ -263,6 +302,7 @@ a > .humburger{
 .image4{
     grid-column: 1/7;
     grid-row: 7/12;
+
 }
 .image2{
     grid-column: 7/13;
@@ -316,7 +356,7 @@ hr{
 }
 
 .footer{
-    padding:50px;
+    padding:20px;
     width:70%;
     margin: auto;
     background-color: $primaryBackground;
@@ -373,7 +413,7 @@ i{
 
 @media screen and (max-width:1000px) {
     .links{
-
+        order:3;
         margin:10px;
     }
     .banner-image img{
@@ -410,29 +450,33 @@ i{
 }
 
 @media  screen and (max-width:585px) {
+    .Para1{
+        width: 100%;
+    }
     .our-team{
         width:auto;
         grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(28,1fr);
+        grid-template-rows: repeat(40,1fr);
+
         .image1{
             grid-column: 1/13;
             grid-row: 1/8;
         }
         .image2{
             grid-column: 1/13;
-            grid-row: 21/31;
+            grid-row: 31/40;
         }
         .image3{
             grid-column: 3/10;
             grid-row: 8/13;
         }
         .image4{
-            grid-column: 3/10;
+            grid-column: 1/13;
             grid-row: 13/16;
         }
         .image5{
             grid-column: 3/10;
-            grid-row: 16/21;
+            grid-row: 22/31;
         }
     }   
  

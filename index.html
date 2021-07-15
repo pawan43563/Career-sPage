@@ -34,15 +34,24 @@
               <i  style="color: white;" id="arrow" class="fa fa-chevron-down"></i>
               
             </li>
-            <li ><a  class="hover"  href="#" onclick="clicked()">OUR WORK</a></li>
-            <li><a  class="hover"  href="#" onclick="clicked()">WHO WE ARE</a></li>
-            <li><a  class="hover" href="#" onclick="clicked()">BLOG</a></li>
-            <li><a class="hover" href="#" onclick="clicked()">CAREERS</a></li>
-            <li><a href="#" class="button" onclick="clicked()">CONTACT</a></li>
+            <li ><a  class="hover"  href="#" >OUR WORK</a></li>
+            <li><a  class="hover"  href="#" >WHO WE ARE</a></li>
+            <li><a  class="hover" href="#" >BLOG</a></li>
+            <li><a class="hover" href="#" >CAREERS</a></li>
+            <li><a href="#" class="button" >CONTACT</a></li>
           </ul>
+
+            <div class="menu humburger" onclick="changebar()">
+              <div class='bar first' ></div>
+              <div class='bar second'></div>
+              <div class='bar third'></div>
+            </div>
+
+            
+
           
-          <li class="toggle "><a href="#nav-container">
-            <i onclick="togglenav()" class="fa fa-bars humburger"></i></a></li>
+
+
         </div>
         
     </div>
@@ -75,7 +84,7 @@
 
             </p>
 
-              <!-- <a href="#" class="button">View all Jobs</a> -->
+     
           </div>
          
          
@@ -178,7 +187,7 @@
       
 
 <script>
-  function change(e){
+    function change(e){
     var x=document.getElementById("arrow");
     x.classList.remove("fa-chevron-down");
     x.classList.add("fa-chevron-up")
@@ -190,29 +199,21 @@
     x.classList.add("fa-chevron-down")
 }
 
+  function changebar(e){
+    z=document.getElementsByClassName("menu")[0];
+    if (z.classList.contains("humburger")){
+        z.classList.remove("humburger")
+        z.classList.add("cross")
+    }else{
+        z.classList.add("humburger")
+        z.classList.remove("cross")
+    }   
+  
+  }
 
-function togglenav(event){
-        var x=document.getElementsByClassName("nav-container")[0]
-        var x1=document.getElementsByClassName("toggle")[0]
-        if (x.classList.contains("active")){
-            x.style.display="none";
-            x.classList.remove("active");
-        }else{
 
-            x.classList.add("active");
-            x.style.display="flex";
 
-        }
-    }
 
-    function clicked(e){
-        var x=document.getElementsByClassName("toggle")[0]
-        var x1=document.getElementsByClassName("nav-container")[0]
-        if (window.innerWidth<1295){
-            x1.style.display="none";
-        }
-
-    }
 </script>
 </body>
 </html>
