@@ -484,6 +484,9 @@ i {
             order: 3;
     margin: 10px;
   }
+  .links a {
+    margin: 10px;
+  }
   .banner-image img {
     width: 100%;
   }
@@ -540,9 +543,6 @@ i {
 }
 
 @media screen and (max-width: 585px) {
-  .Para1 {
-    width: 100%;
-  }
   .our-team {
     width: auto;
     -ms-grid-columns: (1fr)[12];
@@ -578,9 +578,9 @@ i {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1/13;
-    -ms-grid-row: 13;
-    -ms-grid-row-span: 3;
-    grid-row: 13/16;
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 2;
+    grid-row: 14/16;
   }
   .our-team .image5 {
     -ms-grid-column: 3;

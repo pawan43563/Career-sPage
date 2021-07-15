@@ -415,6 +415,9 @@ i{
     .links{
         order:3;
         margin:10px;
+        a{
+            margin:10px;
+        }
     }
     .banner-image img{
         width: 100%;
@@ -450,9 +453,7 @@ i{
 }
 
 @media  screen and (max-width:585px) {
-    .Para1{
-        width: 100%;
-    }
+
     .our-team{
         width:auto;
         grid-template-columns: repeat(12,1fr);
@@ -472,7 +473,7 @@ i{
         }
         .image4{
             grid-column: 1/13;
-            grid-row: 13/16;
+            grid-row: 14/16;
         }
         .image5{
             grid-column: 3/10;
